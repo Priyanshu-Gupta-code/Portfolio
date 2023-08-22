@@ -1,0 +1,103 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.hero .container {
+    max-width: 107rem;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-main {
+    display: flex;
+    gap: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    color: #2d2e32;
+    margin: 2rem 0;
+    line-height: 1.2;
+    transition: all 0.4s ease-in-out;
+}
+
+.hero-text img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    transition: all 0.4s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #555;
+}
+
+.hero-text span {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 4rem;
+    margin: 2.5rem 0;
+    cursor: pointer;
+}
+
+.hero-text span i {
+    color: black;
+}
+
+.hero-text span i:hover {
+    color: #147EFB;
+}
+
+.hero-img {
+    width: 35rem;
+    height: 35rem;
+    transition: all 1s ease-in-out;
+    border: 3px solid #2d2e32;
+    position: relative;
+    animation: circle 8s  ease-in-out infinite;
+    background-image: url("../../Assets/PriyanshuGuptaProfile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-animation: circle 8s ease-in-out infinite;
+}
+
+@keyframes circle {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
