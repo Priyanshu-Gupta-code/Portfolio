@@ -112,6 +112,7 @@ nav li:hover div, .nav__mobile-menu li:hover div {
 }
 /* Mobile menu end */
 
+/* Active nav link */
 nav li.active a {
     color: #147EFB;
 }
